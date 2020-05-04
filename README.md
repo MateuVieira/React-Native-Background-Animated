@@ -31,5 +31,5 @@ If some styles on the image, for this I'm using the ImageBackground, the result 
 
 And finally with the animation:
 
-![](https://gifyu.com/image/lXLk.gif)
+![](https://github.com/MateuVieira/React-Native-Background-Animated/blob/master/assets/animation.gif)
 
