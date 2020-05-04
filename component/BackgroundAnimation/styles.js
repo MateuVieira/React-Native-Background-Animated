@@ -1,22 +1,22 @@
 import styled from 'styled-components/native';
 
-export const BackgoundImage = styled.ImageBackground.attrs({
+export const BackgoundImage = styled.ImageBackground.attrs(props => ({
   imageStyle: {
     width: '400%',
     height: '400%',
     transform: [
       {
-        translateX: -300,
+        translateX: props.translateIn.inX,
       },
       {
-        translateY: -300,
+        translateY: props.translateIn.inY,
       },
       {
         rotate: '-45deg',
       },
     ],
   },
-})`
+}))`
   position: absolute;
   top: -100%;
   left: 0;

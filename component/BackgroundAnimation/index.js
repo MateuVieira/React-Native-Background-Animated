@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Animated, Easing } from 'react-native';
+import { Animated, Easing, Dimensions } from 'react-native';
 
 import backgroundImage from '../../assets/background.png';
 import { BackgoundImage } from './styles';
@@ -11,6 +11,11 @@ import {
   ANIMATION_TO_VALUE,
   ANIMATION_DURATION,
 } from '../../config/Constants';
+
+const translateIn = {
+  inX: -(Dimensions.get('window').width * 0.9375),
+  inY: -(Dimensions.get('window').height * 0.9375),
+};
 
 export default function BackgroundAnimation() {
   const inicialValue = 0;
@@ -52,6 +57,7 @@ export default function BackgroundAnimation() {
           },
         ],
       }}
+      translateIn={translateIn}
     />
   );
 }
